@@ -330,16 +330,16 @@ main {
 }
 
 .model-3d-box {
-  height: 400px;
-  background: #111;
+  width: 100%;
+  max-width: 900px;
+  height: 500px;
+  margin: 30px auto;
+  background: #000;
   border-radius: 12px;
   border: 1px solid #333;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #777;
-  font-size: 1.2rem;
+  overflow: hidden;
 }
+
 
 /*CSS del registro family*/
 

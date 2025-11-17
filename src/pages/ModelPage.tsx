@@ -1,5 +1,6 @@
 import { useParams } from "react-router-dom";
 import marcas from "../data/marcas.json";
+import Modelo3D from "../components/Modelo3D";
 
 export default function ModelPage() {
   const { marcaId, modeloId } = useParams();
@@ -24,9 +25,12 @@ export default function ModelPage() {
       <p className="model-description">{modelo.descripcion}</p>
 
       <h2 className="model-subtitle">Vista 3D (Próximamente)</h2>
+
+
       <div className="model-3d-box">
-        <p>El modelo 3D se cargará aquí...</p>
-      </div>
+      <Modelo3D file={`/models/${modelo.id}.glb`} />      </div>
+
+
     </div>
   );
 }

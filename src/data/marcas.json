@@ -5,11 +5,13 @@
     "descripcion": "Hipercoches suecos de ingeniería extrema.",
     "imagen": "/img/logo_de_Koenigsegg.jpg",
     "modelos": [
-      { "id": "agera-rs", "nombre": "Agera RS", "precio": "2.5M USD", "imagen": "/img/Koenigsegg/Koenigsegg_Gemera.jpg", "descripcion": "Hiperauto de récord mundial." },
-      { "id": "jesko", "nombre": "Jesko", "precio": "3M USD", "imagen": "cars-luxury/public/img/Koenigsegg/Koenigsegg_Jesko.jpg", "descripcion": "Máquina diseñada para la velocidad extrema." },
-      { "id": "regera", "nombre": "Regera", "precio": "2.2M USD", "imagen": "cars-luxury/public/img/Koenigsegg/Koenigsegg_Regera.jpg", "descripcion": "Híbrido de lujo con 1500 HP." }
+      { "id": "agera-rs", "nombre": "Agera RS", "precio": "2.5M USD", "imagen": "/img/Koenigsegg/Koenigsegg_Gemera.jpg", "descripcion": "Hiperauto de récord mundial.", "modelo3D": "/models/agera-rs." },
+      { "id": "jesko", "nombre": "Jesko", "precio": "3M USD", "imagen": "cars-luxury/public/img/Koenigsegg/Koenigsegg_Jesko.jpg", "descripcion": "Máquina diseñada para la velocidad extrema.", "modelo3D": "" },
+      { "id": "regera", "nombre": "Regera", "precio": "2.2M USD", "imagen": "cars-luxury/public/img/Koenigsegg/Koenigsegg_Regera.jpg", "descripcion": "Híbrido de lujo con 1500 HP." , "modelo3D": ""}
     ]
   },
+
+
 
   {
     "id": "bugatti",
@@ -17,8 +19,8 @@
     "descripcion": "Máximo lujo y potencia francesa.",
     "imagen": "/img/logo_de_Lexus.jpg",
     "modelos": [
-      { "id": "chiron", "nombre": "Bugatti Chiron", "precio": "3M USD", "imagen": "/img/bugatti_chiron.jpg", "descripcion": "Uno de los autos más rápidos del planeta." },
-      { "id": "divo", "nombre": "Bugatti Divo", "precio": "5M USD", "imagen": "/img/bugatti_divo.jpg", "descripcion": "Superdeportivo de alto rendimiento en curvas." }
+      { "id": "chiron", "nombre": "Bugatti Chiron", "precio": "3M USD", "imagen": "/img/bugatti_chiron.jpg", "descripcion": "Uno de los autos más rápidos del planeta.", "modelo3D": "" },
+      { "id": "divo", "nombre": "Bugatti Divo", "precio": "5M USD", "imagen": "/img/bugatti_divo.jpg", "descripcion": "Superdeportivo de alto rendimiento en curvas." , "modelo3D": ""}
     ]
   },
 
@@ -28,9 +30,9 @@
     "descripcion": "Superdeportivos italianos con diseño agresivo.",
     "imagen": "/img/logo_de_Lamborghini.jpg",
     "modelos": [
-      { "id": "huracan", "nombre": "Huracán", "precio": "260K USD", "imagen": "/img/lamborghini_huracan.jpg", "descripcion": "Motor V10 y diseño radical." },
-      { "id": "aventador", "nombre": "Aventador", "precio": "500K USD", "imagen": "/img/lamborghini_aventador.jpg", "descripcion": "V12 legendario de Lamborghini." },
-      { "id": "revuelto", "nombre": "Revuelto", "precio": "600K USD", "imagen": "/img/lamborghini_revuelto.jpg", "descripcion": "Primer híbrido V12 de la marca." }
+      { "id": "huracan", "nombre": "Huracán", "precio": "260K USD", "imagen": "/img/lamborghini_huracan.jpg", "descripcion": "Motor V10 y diseño radical.", "modelo3D": "" },
+      { "id": "aventador", "nombre": "Aventador", "precio": "500K USD", "imagen": "/img/lamborghini_aventador.jpg", "descripcion": "V12 legendario de Lamborghini.", "modelo3D": "" },
+      { "id": "revuelto", "nombre": "Revuelto", "precio": "600K USD", "imagen": "/img/lamborghini_revuelto.jpg", "descripcion": "Primer híbrido V12 de la marca.", "modelo3D": "" }
     ]
   },
 
