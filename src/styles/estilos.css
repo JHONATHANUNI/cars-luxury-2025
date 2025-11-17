@@ -281,6 +281,132 @@ main {
   margin-bottom: 10px;
 }
 
+/*Estilos de los Modelos*/
+
+.model-container {
+  max-width: 1100px;
+  margin: 50px auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.model-title {
+  font-size: 3rem;
+  color: var(--color-accent);
+  text-shadow: 0 0 10px var(--color-accent-glow);
+  margin-bottom: 10px;
+}
+
+.model-price {
+  color: #ff4747;
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.model-img-box {
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto 30px;
+}
+
+.model-img-box img {
+  width: 100%;
+  border-radius: 10px;
+  background: #000;
+}
+
+.model-description {
+  font-size: 1.2rem;
+  color: #ccc;
+  max-width: 800px;
+  margin: 0 auto 40px;
+}
+
+.model-subtitle {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.model-3d-box {
+  height: 400px;
+  background: #111;
+  border-radius: 12px;
+  border: 1px solid #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #777;
+  font-size: 1.2rem;
+}
+
+/*CSS del registro family*/
+
+.registro-familia {
+  max-width: 600px;
+  margin: 60px auto 80px;
+  background-color: rgba(192, 0, 0, 0.1);
+  border: 2px solid var(--color-accent);
+  border-radius: 15px;
+  padding: 30px 20px;
+  text-align: center;
+  color: var(--color-text);
+}
+
+.registro-familia h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: var(--color-accent);
+  text-shadow: 0 0 8px var(--color-accent-glow);
+}
+
+.registro-familia form {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.registro-familia input[type="email"] {
+  flex: 1 1 250px;
+  padding: 12px 16px;
+  border-radius: 30px;
+  border: 1.5px solid var(--color-accent);
+  background-color: #1a1a1a;
+  color: var(--color-text);
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.registro-familia input[type="email"]:focus {
+  border-color: var(--color-accent-glow);
+}
+
+.btn-2 {
+  padding: 12px 30px;
+  border-radius: 30px;
+  font-weight: 600;
+  text-transform: uppercase;
+  background-color: var(--color-accent);
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-2:hover {
+  background-color: var(--color-accent-glow);
+}
+
+.confirmacion-msg {
+  margin-top: 18px;
+  color: #aaffaa;
+  font-weight: 600;
+  font-size: 1rem;
+  text-shadow: 0 0 6px #99ff99;
+}
 
 
 

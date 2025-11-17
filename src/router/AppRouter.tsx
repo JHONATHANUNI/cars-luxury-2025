@@ -6,6 +6,7 @@ import DesignersPage from "../pages/DesignersPage";
 import NoticiasPage from "../pages/NoticiasPage";
 import CatalogoPage from "../pages/CatalogoPage";
 import BrandPage from "../pages/BrandPage";
+import ModelPage from "../pages/ModelPage";
 
 export const router = createBrowserRouter([
   {
@@ -18,7 +19,8 @@ export const router = createBrowserRouter([
       { path: "diseñadores", element: <DesignersPage /> },
       { path: "noticias", element: <NoticiasPage /> },
       { path: "catalogo", element: <CatalogoPage /> },
-      { path: "marca/:id", element: <BrandPage /> }
+      { path: "marca/:id", element: <BrandPage /> },
+      { path: "marca/:marcaId/modelo/:modeloId", element: <ModelPage />}
     ],
   },
 ]);

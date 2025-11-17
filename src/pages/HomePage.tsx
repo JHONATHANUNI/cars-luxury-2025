@@ -1,7 +1,23 @@
+import { useState } from "react";
+
 import marcas from "../data/marcas.json";
-import "../styles/estilos.css"; // Asegúrate de que tus estilos estén aquí
+import "../styles/estilos.css";
 
 export default function HomePage() {
+  const [email, setEmail] = useState("");
+  const [confirmacion, setConfirmacion] = useState("");
+
+  const handleRegistro = (e: { preventDefault: () => void; }) => {
+    e.preventDefault();
+    if (email.trim() === "") {
+      setConfirmacion("Por favor, ingresa un correo válido.");
+      return;
+    }
+    // Aquí voy a agregar lógica real, por ahora solo mostramos confirmación
+    setConfirmacion("¡Gracias por registrarte! Bienvenido a la familia Luxury.");
+    setEmail("");
+  };
+
   return (
     <div>
       {/* ⭐ HERO SECTION */}
@@ -26,7 +42,7 @@ export default function HomePage() {
       <section className="catalogo">
         <h2 className="catalogo-titulo">Catálogo de Marcas</h2>
 
-        <div className="catalogo-grid">  {/* <----- IMPORTANTE */}
+        <div className="catalogo-grid">
           {marcas.map((marca) => (
             <div key={marca.id} className="catalogo-card">
               <img src={marca.imagen} alt={marca.nombre} />
@@ -42,6 +58,24 @@ export default function HomePage() {
             </div>
           ))}
         </div>
+      </section>
+
+      {/* ⭐ SECCIÓN REGISTRO PARA PERTENECER A LA FAMILIA LUXURY */}
+      <section className="registro-familia container">
+        <h2>¿Quieres pertenecer a la familia Luxury? Regístrate gratis</h2>
+        <form onSubmit={handleRegistro}>
+          <input
+            type="email"
+            placeholder="Tu correo electrónico"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            required
+          />
+          <button type="submit" className="btn-2">
+            Registrarse
+          </button>
+        </form>
+        {confirmacion && <p className="confirmacion-msg">{confirmacion}</p>}
       </section>
     </div>
   );

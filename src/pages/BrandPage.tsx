@@ -32,9 +32,9 @@ export default function BrandPage() {
               <p>{modelo.descripcion}</p>
               <p className="price-tag">{modelo.precio}</p>
 
-              <a className="btn-2" href="#">
-                Más información
+              <a className="btn-2" href={`/marca/${marca.id}/modelo/${modelo.id}`}> Más información
               </a>
+              
             </div>
           </div>
         ))}
