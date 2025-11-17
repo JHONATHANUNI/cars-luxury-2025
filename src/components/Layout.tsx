@@ -1,4 +1,4 @@
-import { Outlet } from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
 
 export default function Layout() {
   return (
@@ -17,8 +17,9 @@ export default function Layout() {
           <nav className="navbar">
             <ul>
               <li><a href="/redes">Redes sociales</a></li>
-              <li><a href="/noticias">Noticias</a></li>
               <li><a href="/diseñadores">Diseñadores</a></li>
+              <li><a href="/noticias">Noticias</a></li>
+              <li><Link to="/catalogo">Catálogo</Link></li>
             </ul>
           </nav>
         </div>
