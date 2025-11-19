@@ -7,19 +7,24 @@ export default function Layout() {
       {/* HEADER */}
       <header className="header">
         <div className="menu container">
-          <a href="/" className="logo">LUXURY SPORT VEHICLES</a>
+          <div>
+            <a href="/" className="logo-header">LUXURY SPORT VEHICLES</a>
+          </div>
+            
+           
 
-          <input type="checkbox" id="menu" />
+          {/* <input type="checkbox" id="menu" />
           <label htmlFor="menu">
             <img src="/img/menu.png" className="menu-icono" alt="Menú" />
-          </label>
+          </label> */}
 
-          <nav className="navbar">
+          <nav className="navbar"> 
             <ul>
-              <li><a href="/redes">Redes sociales</a></li>
-              <li><a href="/diseñadores">Diseñadores</a></li>
-              <li><a href="/noticias">Noticias</a></li>
-              <li><Link to="/catalogo">Catálogo</Link></li>
+              <li className="botones-header"><a href="/redes" >Redes sociales</a></li>
+              <li className="botones-header"><a href="/diseñadores" >Diseñadores</a></li>
+              <li className="botones-header"><a href="/noticias" >Noticias</a></li>
+              <li className="botones-header"><Link to="/catalogo" >Catálogo</Link></li>
+              <li><a href="/"><img src="/public/img/icono_inicio.jpg" alt="" className="icono-session" /></a></li>
             </ul>
           </nav>
         </div>

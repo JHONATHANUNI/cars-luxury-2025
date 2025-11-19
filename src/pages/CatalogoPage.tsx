@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 export default function CatalogoPage() {
   return (
     <section className="catalogo container">
-      <h2 className="catalogo-titulo">Hipercoches Populares</h2>
+      <h2 className="catalogo-titulo">Catálogo de Marcas</h2>
 
       <div className="catalogo-grid">
         {marcas.map((marca) => (
