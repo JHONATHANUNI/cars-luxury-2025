@@ -7,6 +7,10 @@ import NoticiasPage from "../pages/NoticiasPage";
 import CatalogoPage from "../pages/CatalogoPage";
 import BrandPage from "../pages/BrandPage";
 import ModelPage from "../pages/ModelPage";
+import LoginPage from "../pages/LoginPage";
+import RegisterPage from "../pages/RegisterPage";
+import ProtectedRoute from "../components/ProtectedRoute";
+
 
 export const router = createBrowserRouter([
   {
@@ -20,7 +24,10 @@ export const router = createBrowserRouter([
       { path: "noticias", element: <NoticiasPage /> },
       { path: "catalogo", element: <CatalogoPage /> },
       { path: "marca/:id", element: <BrandPage /> },
-      { path: "marca/:marcaId/modelo/:modeloId", element: <ModelPage />}
+      { path: "marca/:marcaId/modelo/:modeloId", element: <ModelPage />},
+      { path: "login",element: <LoginPage />},
+      { path: "register", element: <RegisterPage />}
+
     ],
   },
 ]);
