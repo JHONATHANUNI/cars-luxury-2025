@@ -1,6 +1,6 @@
 import express from "express";
 import cors from "cors";
-import authRoutes from "../routes/auth.js";
+import auth from './routes/auth.js';
 
 const app = express();
 
@@ -8,7 +8,7 @@ app.use(cors());
 app.use(express.json());
 
 // Rutas
-app.use("/auth", authRoutes);
+app.use("/auth", auth);
 
 // Home
 app.get("/", (req, res) => {
